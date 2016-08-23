@@ -5,8 +5,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def completed?
-  	!completed_at.blank?
-  end
+  # def completed?
+  # 	!completed_at.blank?
+  # end
 
 end
